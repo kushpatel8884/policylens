@@ -1,0 +1,162 @@
+[
+  {
+    "key": "GOV-01",
+    "control": "CC5.3",
+    "domain": "Governance",
+    "title": "Policy ownership and periodic review",
+    "requirement": "Policies have a named owner, are formally approved, and are reviewed regularly.",
+    "look_for": "A named policy owner or approver, an effective or approval date, and a review cycle of at least once a year.",
+    "priority": "Medium",
+    "evidence_needed": "Approved policy with version history, owner sign-off and last review date"
+  },
+  {
+    "key": "AC-01",
+    "control": "CC6.1",
+    "domain": "Access Control",
+    "title": "Unique IDs and strong authentication",
+    "requirement": "Every user has a unique ID and authenticates with strong credentials.",
+    "look_for": "Unique user IDs with no shared accounts, AND strong password rules (length of 12+ or complexity), AND account lockout after repeated failed logins.",
+    "priority": "High",
+    "evidence_needed": "Identity provider export of user list; password and lockout configuration screenshot"
+  },
+  {
+    "key": "AC-02",
+    "control": "CC6.2",
+    "domain": "Access Control",
+    "title": "Access approved before it is granted",
+    "requirement": "Access is formally requested and approved before it is provisioned.",
+    "look_for": "A documented request process (e.g., ticket) AND approval by a manager or system owner before access is granted.",
+    "priority": "High",
+    "evidence_needed": "Sample of access request tickets showing manager approval before access was granted"
+  },
+  {
+    "key": "AC-03",
+    "control": "CC6.2",
+    "domain": "Access Control",
+    "title": "Timely removal of access",
+    "requirement": "Access is removed promptly when a user leaves or changes role.",
+    "look_for": "Access removed within a defined timeframe (e.g., 24 hours) on termination, covering employees AND contractors, AND access adjusted when a user changes role.",
+    "priority": "High",
+    "evidence_needed": "List of leavers vs. account disable dates showing removal within the SLA"
+  },
+  {
+    "key": "AC-04",
+    "control": "CC6.3",
+    "domain": "Access Control",
+    "title": "Least privilege and role-based access",
+    "requirement": "Users receive only the access their job role requires.",
+    "look_for": "A least-privilege principle AND role-based access (groups or roles) AND restriction of administrator rights.",
+    "priority": "High",
+    "evidence_needed": "Role/group matrix and list of admin users with justification"
+  },
+  {
+    "key": "AC-05",
+    "control": "CC6.3",
+    "domain": "Access Control",
+    "title": "Periodic user access reviews",
+    "requirement": "User access is reviewed on a regular schedule and inappropriate access is removed.",
+    "look_for": "User access reviews at a defined frequency (e.g., quarterly), performed by system owners or managers, with evidence retained.",
+    "priority": "High",
+    "evidence_needed": "Signed quarterly access review records with actions taken"
+  },
+  {
+    "key": "AC-06",
+    "control": "CC6.6",
+    "domain": "Access Control",
+    "title": "MFA for remote and external access",
+    "requirement": "Multi-factor authentication protects remote and external access.",
+    "look_for": "MFA required for ALL remote access (VPN, cloud consoles, external apps) for ALL users, not only administrators.",
+    "priority": "High",
+    "evidence_needed": "MFA enforcement settings for VPN, cloud console and SSO"
+  },
+  {
+    "key": "LOG-01",
+    "control": "CC7.2",
+    "domain": "Logging & Monitoring",
+    "title": "Access activity logged and monitored",
+    "requirement": "Security-relevant access events are logged and monitored for anomalies.",
+    "look_for": "Logging of logins, failed login attempts and privileged actions, AND regular review or alerting on those logs.",
+    "priority": "High",
+    "evidence_needed": "Log retention settings, sample alerts and evidence of log review"
+  },
+  {
+    "key": "DP-01",
+    "control": "CC6.7",
+    "domain": "Data Protection",
+    "title": "Encryption in transit",
+    "requirement": "Data transmitted over networks is encrypted.",
+    "look_for": "Use of TLS/HTTPS or equivalent encryption for data in transit, especially over public networks.",
+    "priority": "High",
+    "evidence_needed": "TLS configuration or SSL scan results for public endpoints"
+  },
+  {
+    "key": "DP-02",
+    "control": "CC6.1",
+    "domain": "Data Protection",
+    "title": "Encryption at rest",
+    "requirement": "Sensitive data stored in systems is encrypted.",
+    "look_for": "Encryption of stored data (databases, disks, backups, laptops) with managed encryption keys.",
+    "priority": "Medium",
+    "evidence_needed": "Encryption settings for databases, disks and backups; key management records"
+  },
+  {
+    "key": "IR-01",
+    "control": "CC7.4",
+    "domain": "Incident Response",
+    "title": "Incident response process",
+    "requirement": "Security incidents are reported, contained, resolved and reviewed under a defined process.",
+    "look_for": "A documented incident response process with roles, reporting steps, containment, communication and post-incident review.",
+    "priority": "High",
+    "evidence_needed": "Incident response plan, incident log and a post-incident review"
+  },
+  {
+    "key": "CHG-01",
+    "control": "CC8.1",
+    "domain": "Change Management",
+    "title": "Change management",
+    "requirement": "Changes to systems are authorized, tested and approved before release.",
+    "look_for": "Change requests that are documented, tested, approved before production deployment, with segregation between developer and approver.",
+    "priority": "Medium",
+    "evidence_needed": "Sample of change tickets with testing evidence and approvals"
+  },
+  {
+    "key": "VEN-01",
+    "control": "CC9.2",
+    "domain": "Vendor Management",
+    "title": "Vendor risk management",
+    "requirement": "Risks from vendors and third parties are assessed and monitored.",
+    "look_for": "Security assessment of vendors before onboarding, contracts with security requirements, and periodic vendor review.",
+    "priority": "Medium",
+    "evidence_needed": "Vendor inventory, vendor risk assessments and security clauses in contracts"
+  },
+  {
+    "key": "RISK-01",
+    "control": "CC3.2",
+    "domain": "Risk Management",
+    "title": "Risk assessment",
+    "requirement": "Risks to objectives are identified and assessed regularly.",
+    "look_for": "A risk assessment performed at least annually, with identified risks, ratings and treatment plans.",
+    "priority": "Medium",
+    "evidence_needed": "Latest risk assessment and risk register with treatment plans"
+  },
+  {
+    "key": "HR-01",
+    "control": "CC2.2",
+    "domain": "Awareness & Training",
+    "title": "Security awareness and policy acknowledgement",
+    "requirement": "Personnel are trained on security and acknowledge policies.",
+    "look_for": "Security awareness training at onboarding and at least annually, AND personnel acknowledgement of policies.",
+    "priority": "Medium",
+    "evidence_needed": "Training completion records and signed policy acknowledgements"
+  },
+  {
+    "key": "AV-01",
+    "control": "A1.2",
+    "domain": "Availability",
+    "title": "Backups and recovery",
+    "requirement": "Data is backed up and recovery is tested.",
+    "look_for": "Regular backups, defined retention, and periodic restore testing or a tested recovery plan.",
+    "priority": "Medium",
+    "evidence_needed": "Backup job reports and a restore test record"
+  }
+]

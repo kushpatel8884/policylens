@@ -1,0 +1,31 @@
+ACME HEALTHTECH PVT. LTD.
+ACCESS CONTROL POLICY
+Version 1.0
+
+1. Purpose
+This policy defines how access to Acme HealthTech information systems is granted, used and removed, to protect company and customer data.
+
+2. Scope
+This policy applies to all employees, contractors and interns who access Acme HealthTech systems, including the patient portal, AWS cloud environment and internal applications.
+
+3. User Accounts
+3.1 Every user must be given a unique user ID. Shared accounts are not allowed.
+3.2 Passwords must be at least 8 characters long.
+
+4. Granting Access
+4.1 Access to any system must be requested through the IT helpdesk ticketing system.
+4.2 Access must be approved by the user's reporting manager before it is granted.
+4.3 Users are given only the access required for their job role (least privilege). Role-based access groups are used wherever possible.
+
+5. Privileged Access
+5.1 Administrator access is limited to the IT team.
+5.2 Multi-factor authentication (MFA) is required for administrator accounts.
+
+6. Removing Access
+6.1 When an employee leaves the company, HR informs IT and the user's access is removed.
+
+7. Remote Access
+7.1 Employees may access company systems from home using the company VPN.
+
+8. Violations
+Violation of this policy may result in disciplinary action, up to and including termination.
